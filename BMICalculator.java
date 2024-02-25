@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
-public class Main {
+public class BMICalculator {
     
     static Scanner keyboard = new Scanner(System.in);
     
-    static double enteredInches, enteredWeight, calcMeter, calcKilol, massIndex;
+    static double enteredInches, enteredWeight, calcMeter, calcKilo, massIndex;
 
     public static void imperialEntry() {
         System.out.println("Welcome to the BMI Calculator");
@@ -12,6 +12,7 @@ public class Main {
         enteredWeight = keyboard.nextDouble();
         System.out.println("\nPlease enter your height in inches");
         enteredInches = keyboard.nextDouble();
+        keyboard.close();
     }
 
     public static void weightConversion (double calcPound) {
